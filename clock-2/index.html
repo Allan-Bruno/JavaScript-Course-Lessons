@@ -13,47 +13,21 @@
     />
   </head>
   <body>
-    <div class="p-2 h-screen w-screen flex place-content-evenly bg-sky-700">
+    <div class="p-2 h-screen w-screen grid place-content-center bg-sky-700">
       <main
-        class="p-2 overflow-hidden flex flex-col max-w-2xl place-content-around rounded shadow-2xl bg-slate-50"
+        class="p-20 gap-10 overflow-hidden flex flex-col max-w-2xl place-content-center rounded shadow-2xl bg-slate-50"
       >
-        <h1 class="text-4xl font-bold phone:text-5xl">
-          Lorem ipsum dolor sit amet
-        </h1>
-        <p class="text-sm font-light phone:text-base">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          possimus voluptates fugiat eos, voluptas omnis molestias sapiente ea
-          recusandae accusantium eveniet, nostrum veniam. Architecto magnam enim
-          officia molestias odio commodi? Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Quibusdam dolorum velit, beatae adipisci
-          autem praesentium! Voluptatum pariatur autem quasi nulla
-          exercitationem cupiditate quod repellat, nostrum adipisci facere
-          doloribus enim ratione.
-        </p>
-        <div>
-          <form action="none" class="grid auto-cols-auto gap-3">
-            <input
-              class="rounded-full outline-none px-2 py-1 shadow-lg bg-blend-normal hover:bg-slate-100"
-              type="email"
-              placeholder="Email Address"
-            />
-            <input
-              class="rounded-full outline-none px-2 py-1 shadow-lg bg-blend-normal hover:bg-slate-100"
-              type="password"
-              placeholder="Password"
-            />
-            <input
-              class="rounded-full outline-none px-2 py-1 shadow-lg bg-blend-normal hover:bg-slate-100"
-              type="date"
-            />
-            <input
-              class="rounded-full outline-none px-2 py-1 shadow-lg bg-blend-normal hover:bg-slate-100"
-              type="number"
-              placeholder="Only numbers are allowed"
-            />
-          </form>
+        <div class="text-4xl grid place-content-center" id="Day">
+          Loading ...
+        </div>
+        <div class="text-8xl grid place-content-center" id="Clock">
+          Loading ...
+        </div>
+        <div class="text-4xl grid place-content-center" id="Date">
+          Loading ...
         </div>
       </main>
     </div>
+    <script type="module" src="./JS/app.js"></script>
   </body>
 </html>

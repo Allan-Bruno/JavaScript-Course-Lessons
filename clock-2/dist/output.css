@@ -537,28 +537,33 @@ input[type="number"]::-webkit-inner-spin-button,
   width: 100vw;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.auto-cols-auto {
-  grid-auto-columns: auto;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.place-content-around {
-  place-content: space-around;
+.place-content-center {
+  place-content: center;
 }
 
-.place-content-evenly {
-  place-content: space-evenly;
+.gap-1 {
+  gap: 0.25rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -567,10 +572,6 @@ input[type="number"]::-webkit-inner-spin-button,
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .bg-sky-700 {
@@ -587,14 +588,16 @@ input[type="number"]::-webkit-inner-spin-button,
   padding: 0.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-9 {
+  padding: 2.25rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.p-20 {
+  padding: 5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .text-4xl {
@@ -602,53 +605,18 @@ input[type="number"]::-webkit-inner-spin-button,
   line-height: 2.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.bg-blend-normal {
-  background-blend-mode: normal;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.hover\:bg-slate-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 375px) {
-  .phone\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .phone\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
