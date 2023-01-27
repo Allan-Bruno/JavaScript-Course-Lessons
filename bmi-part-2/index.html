@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BMI Exercise Part 2</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="shortcut icon"
+      href="public/assets/icon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div
+      class="p-2 h-screen w-screen flex place-content-evenly bg-sky-700 items-center"
+    >
+      <main
+        class="p-2 overflow-hidden flex flex-col rounded shadow-2xl bg-slate-50 h-max sm:w-max sm:pl-10 sm:pr-10"
+      >
+        <div class="flex justify-center">
+          <h1 class="font-bold">BMI Calculator</h1>
+        </div>
+        <section
+          class="inline-flex w-full place-content-between sm:justify-center sm:gap-32"
+        >
+          <div>
+            <h1>BMI</h1>
+            <p class="font-xs mb-3 align-middle">&le; 18,5</p>
+            <p class="font-xs mb-3 align-middle">18,5 ~ 24,9</p>
+            <p class="font-xs mb-3 align-middle">25 ~ 29,9</p>
+            <p class="font-xs mb-3 align-middle">30 ~ 34,9</p>
+            <p class="font-xs mb-3 align-middle">35 ~ 39,9</p>
+            <p class="font-xs align-middle">&ge; 40</p>
+          </div>
+          <div>
+            <h1>Result</h1>
+            <p class="font-xs mb-3 align-middle">Under weight</p>
+            <p class="font-xs mb-3 align-middle">Common weight</p>
+            <p class="font-xs mb-3 align-middle">Overweight</p>
+            <p class="font-xs mb-3 align-middle">Grade 1 Obesity</p>
+            <p class="font-xs mb-3 align-middle">Grade 2 Obesity</p>
+            <p class="font-xs align-middle">Grade 3 Obesity</p>
+          </div>
+        </section>
+        <section class="mt-2 sm:gap-32">
+          <h1 class="mb-2">Try now</h1>
+          <label for="bmi-test">
+            <form name="bmi-test" id="form" class="grid auto-cols-auto gap-2">
+              <input
+                type="text"
+                name="height"
+                id="height"
+                class="rounded-full p-1 shadow-xl bg-blend-multiply pl-3 focus:outline-none focus-within:ring"
+                placeholder="Height in M"
+              />
+              <small>Use . (dot) to place decimal numbers</small>
+              <input
+                type="number"
+                placeholder="Weight in Kg"
+                name="weight"
+                id="weight"
+                min="1"
+                max="500"
+                class="rounded-full p-1 shadow-xl bg-blend-multiply pl-3 focus:outline-none focus-within:ring"
+              />
+              <small>Use . (dot) to place decimal numbers</small>
+              <button
+                id="btn"
+                class="rounded-full p-1 shadow-xl bg-sky-700 text-white hover:bg-sky-900 active:bg-sky-500"
+              >
+                Calculate!
+              </button>
+            </form>
+          </label>
+        </section>
+        <section id="result" class="p-3 bg-red-400 rounded mt-2 hidden">
+          teste
+        </section>
+      </main>
+    </div>
+    <script type="module" src="JS/main.js"></script>
+  </body>
+</html>
