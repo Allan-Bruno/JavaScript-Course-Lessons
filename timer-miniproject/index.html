@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Timer Lesson</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="shortcut icon"
+      href="public/assets/icon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="p-2 h-screen w-screen grid place-content-center bg-sky-700">
+      <main
+        class="p-5 px-5 overflow-hidden flex flex-col items-center rounded h-fit shadow-2xl bg-slate-50 gap-2"
+      >
+        <h2 class="text-5xl">Timer</h2>
+        <h1 id="timer" class="text-8xl mb-3 font-semibold">00:00:00</h1>
+        <div id="buttons">
+          <button
+            id="start"
+            class="px-6 py-1 shadow-2xl rounded-full bg-sky-500 hover:bg-sky-400 active:bg-sky-900"
+          >
+            Start
+          </button>
+          <button
+            id="pause"
+            class="px-6 py-1 shadow-2xl rounded-full bg-sky-500 hover:bg-sky-400 active:bg-sky-900"
+          >
+            Pause
+          </button>
+          <button
+            id="reset"
+            class="px-6 py-1 shadow-2xl rounded-full bg-sky-500 hover:bg-sky-400 active:bg-sky-900"
+          >
+            Reset
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
