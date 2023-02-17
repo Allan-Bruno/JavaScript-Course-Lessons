@@ -34,6 +34,7 @@ document.getElementById("buttons").addEventListener("click", (e) => {
   e = e.target.id;
 
   if (e == "start") {
+    clearInterval(interval);
     interval = setInterval(timer, 1000);
     display.classList.remove("text-red-600");
   }
